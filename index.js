@@ -27,14 +27,10 @@ app.get("/products/:productId", async (req, res) => {
   }
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
 
 // GET Product Reviews
-/**
- * 
- * 
- * 
- * 
+ 
  app.get("/products/:productId/reviews", async (req, res) => {
    const { productId } = req.params;
  
@@ -47,6 +43,6 @@ app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
      res.json(error);
    }
  });
- */
+ 
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
